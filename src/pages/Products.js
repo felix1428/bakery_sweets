@@ -13,6 +13,8 @@ const productsData = {
   karams: [
     { name: 'Karam Item 1', price: '₹150.00 – ₹500.00', image: logo },
     { name: 'Karam Item 2', price: '₹180.00 – ₹600.00', image: logo },
+    { name: 'Karam Item 1', price: '₹150.00 – ₹500.00', image: logo },
+    { name: 'Karam Item 2', price: '₹180.00 – ₹600.00', image: logo },
   ],
   cakes: [
     { name: 'Chocolate Cake', price: '₹500.00 – ₹1500.00', image: third },
