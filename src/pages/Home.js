@@ -91,7 +91,7 @@ export default function Home() {
 
                 <p>Get Your Products At Special Prices !!!</p>
 
-                <p>Shipping for Tamil Nadu, Kerala, Andhra Pradesh And Karnataka Only Available.</p>
+                <p>Shipping for Tamil Nadu  Only Available.</p>
               </div>
             </section>
             
