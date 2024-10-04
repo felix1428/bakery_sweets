@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import React from 'react';
+import { HashRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import './App.css';
+import Home from './pages/Home';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import ProductPage from './pages/Products';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          {/* Redirect from root path to /home */}
+          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/products" element={<ProductPage/>}/>
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
